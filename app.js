@@ -1,3 +1,8 @@
+/*
+Four function calculator written in Javscript. 
+Made by Vinayak Trigunayat.
+*/
+
 const keys = document.querySelectorAll(".key");
 let num1 = "0";
 let num2 = "0";

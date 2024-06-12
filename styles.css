@@ -12,30 +12,53 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    background-image: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));;
 }
 
 .grid-container {
 
+    border-radius: 2%;
     min-height: 60vh;
     width: 38.4vh;
-    border: 5px solid gray;
+    border: 0.8vh solid #148F77;
     display: grid;
     grid-template-columns: repeat(4,25%);
     grid-template-rows: 25% repeat(5,auto);
 }
 
+.key, .screen {
+
+    font-family: Prompt, Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
 .screen {
 
-    background-color: burlywood;
+    background-color: rgb(163, 228, 215, 0.5);
     grid-column: span 4;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     font-size: 2rem;
+    
+}
+
+.key {
+
+    border-radius: 0%;
+    border: 0.2vh solid #17A589;
+    cursor: pointer;
+    background-color: #1ABC9C;
 }
 
 
 .key-ac, .key-0 {
 
     grid-column: span 2;
+}
+
+.key:hover {
+
+    filter: brightness(120%);
 }
