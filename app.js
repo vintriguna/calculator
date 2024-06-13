@@ -132,8 +132,24 @@ function getResult(op) {
     When an operator is pressed
 */
 function operator(e) {
+    let operatorVal;
+    let operatorClass = e.target.classList;
+    if (operatorClass.contains("key-multiply")) {
 
-    let operatorVal = e.target.innerText;
+        operatorVal = "*";
+    }
+    else if (operatorClass.contains("key-divide")) {
+
+        operatorVal = "/";
+    }
+    else if (operatorClass.contains("key-subtract")) {
+
+        operatorVal = "-";
+    }
+    else if (operatorClass.contains("key-add")) {
+
+        operatorVal = "+";
+    }
 
     if (writingNum1) {
         currentOperator = operatorVal;
